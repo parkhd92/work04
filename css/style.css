@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    color:#3d3d3d;
+    letter-spacing: -0.5px;
+}
+body{font-family:'Noto Sans KR', sans-serif; background: #111;}
+.fl{float:left;}
+.cf:after{content:""; display:block; clear:both;}
+img{border-style:none;}
+a{text-decoration:none;}
+li{list-style: none;}
+
+
+#header{width:100%; height:100px; position:fixed; z-index: 99; top:-100px; opacity:0;}
+.gnb{width:90%; margin:0 auto;}
+#header .gnb img{width:50px; margin-top:20px; float:left;}
+#header .gnb ul{float:left; margin-left:30%; transition:all 0.3s;}
+#header .gnb ul li a{
+    display:block;
+    font-size:14px;
+    margin-right:50px;
+    color:#fff;
+    letter-spacing: 2px;
+    font-family:'Luckiest Guy', sans-serif;
+    margin-top:40px;
+    opacity:0.5;
+    transition:all 0.3s;
+}
+#header .gnb ul li.select_on a{font-size:20px; opacity:1;}
+#header .gnb ul li:hover a{font-size:20px; opacity:1;}
+
+#header .marvel_logo{float:right;}
+#header .marvel_logo img{width:110px; margin-top:30px;}
+.btns div{position:fixed;}
+.btns .next{top:60%; right:5%;}
+.btns .prev{top:60%; left:5%;}
+.btns .down{bottom:5%; left:50%; margin-left:-15px;}
+.btns .next img{width:50px;}
+.btns .prev img{width:50px;}
+.btns .down img{width:30px;}
+
+
+
+#wrap{width:100%; overflow:hidden; float:left; height:1700px;}
+#wrap #mainSlide{position:relative; height:100%;}
+#wrap .slide{opacity:1;}
+#wrap .morales{position:absolute; width:100%; height:100%; }
+#wrap .main_morales{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/mor_bg.jpg) no-repeat;
+    background-size: cover;
+    position:absolute;
+    z-index: 15;
+    overflow: hidden;
+    opacity: 1;
+}
+
+
+.main_morales h2{position:fixed; top:600px; left:50%; margin-left:-650px; opacity:0;}
+.main_morales h2 span{
+    font-size:180px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    transition:all 0.3s;
+}
+h2 span.mg{margin-left:80px;}
+.morales_pic{opacity:0;}
+.morales_pic img.pic1_1{display:block; position:absolute; top:200px; left:50%; margin-left:-300px; width:600px; z-index: 11}
+.morales_pic img.pic1_2{display:block; position:absolute; top:210px; left:50%; margin-left:-300px; width:600px; z-index: 10; opacity: 0.5;}
+.morales_pic img.pic1_3{display:block; position:absolute; top:210px; left:50%; margin-left:-300px; width:600px; z-index: 9; opacity: 0.4;}
+
+
+
+#wrap .paker{position:absolute; left:100%; width:100%; height:100%;}
+#wrap .main_parker{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/piter_bg.jpg) no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:0;
+    z-index: 25;
+}
+
+#wrap #section02 .main_parker h2{position:fixed; top:500px; left:50%; margin-left:-615px; opacity:0;}
+#wrap #section02 .main_parker h2 span{
+    font-size:180px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    transition:all 0.3s;
+}
+.parker_pic{opacity:0;}
+.parker_pic img.pic2_1{display:block; position:absolute; top:-50px; left:50%; margin-left:-360px; width:700px; z-index: 23;}
+.parker_pic img.pic2_2{display:block; position:absolute; top:-50px; left:50%; margin-left:-360px; width:700px; z-index: 22; opacity:0.3;}
+.parker_pic img.pic2_3{display:block; position:absolute; top:-50px; left:50%; margin-left:-360px; width:700px; z-index: 21; opacity:0.3;}
+
+
+
+
+
+
+#wrap .gwen{position:absolute; left:200%; width:100%; height:100%;}
+#wrap .main_gwen{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/gwen_bg.jpg) no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:0;
+    z-index: 30;
+}
+
+#wrap #section03 .gwen h2{position:fixed; top:500px; left:50%; margin-left:-422px; opacity:0;}
+#wrap #section03 .gwen h2 span{
+    font-size:200px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    margin-left:100px;
+    transition:all 0.3s;
+}
+#wrap #section03 .gwen h2 span.no_margin{margin:0;}
+.gwen_pic img.pic3_1{display:block; position:absolute; top:100px; left:50%; margin-left:-350px; width:700px; z-index: 35; }
+.gwen_pic img.pic3_2{display:block; position:absolute; top:80px; left:50%; margin-left:-400px; width:800px; z-index: 34; opacity:0.3;}
+
+
+
+
+
+
+#wrap .peni{position:absolute; left:300%; width:100%; height:100%;}
+#wrap .main_peni{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/robot_bg.jpg) no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:0;
+    z-index: 30;
+    overflow:hidden;
+}
+
+#wrap #section04 .peni h2{position:fixed; top:500px; left:50%; margin-left:-546px; opacity:0;}
+#wrap #section04 .peni h2 span{
+    font-size:180px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    transition:all 0.3s;
+}
+
+
+.peni_pic img.pic4_1{display:block; position:absolute; top:160px; left:50%; margin-left:-329px; height:1000px; z-index: 45; }
+.peni_pic img.pic4_2{display:block; position:absolute; top:160px; left:50%; margin-left:-329px; height:1000px; z-index: 44; opacity:0.5}
+.peni_pic img.pic4_3{display:block; position:absolute; top:160px; left:50%; margin-left:-329px; height:1000px; z-index: 43; opacity:0.3}
+
+
+
+
+#wrap .ham{position:absolute; left:400%; width:100%; height:100%;}
+#wrap .main_ham{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/pig_bg.jpg) no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:0;
+    z-index: 30;
+}
+
+#wrap #section05 .ham h2{position:fixed; top:500px; left:50%; margin-left:-511px; opacity:0;}
+#wrap #section05 .ham h2 span{
+    font-size:180px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    transition:all 0.3s;
+}
+
+
+.ham_pic img.pic5_1{display:block; position:absolute; top:150px; left:50%; margin-left:-175px; width:350px; z-index: 45; }
+.ham_pic img.pic5_2{display:block; position:absolute; top:150px; left:50%; margin-left:-175px; width:350px; z-index: 44; opacity:.3;}
+.ham_pic img.pic5_3{display:block; position:absolute; top:150px; left:50%; margin-left:-175px; width:350px; z-index: 43; opacity:.3;}
+
+
+
+
+
+
+#wrap .nuar{position:absolute; left:500%; width:100%; height:100%;}
+#wrap .main_nuar{
+    width:100%;
+    height:100%;
+    background: url(../img/bg/gray_bg.jpg) no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:0;
+    z-index: 30;
+    overflow:hidden;
+}
+
+#wrap #section06 .nuar h2{position:fixed; top:500px; left:50%; margin-left:-518.5px; opacity:0;}
+#wrap #section06 .nuar h2 span{
+    font-size:180px;
+    letter-spacing:-2px;
+    font-family:'Luckiest Guy', sans-serif;
+    color:#fff;
+    display:block;
+    float:left;
+    transition:all 0.3s;
+}
+
+
+
+.nuar_pic img.pic6_1{display:block; position:absolute; top:200px; left:50%; margin-left:-600px; width:1400px; z-index: 45; }
+.nuar_pic img.pic6_2{display:block; position:absolute; top:300px; left:50%; margin-left:-300px; width:1200px; z-index: 44; opacity:.5;}
+.nuar_pic img.pic6_3{display:block; position:absolute; top:400px; left:50%; margin-left:0px; width:1000px; z-index: 43; opacity:.3;}
+
+/* 메인 배너 끝 */
+
+
+
+
+/* morales */
+
+.morales_contents{width:100%; background: #5a0506; overflow:hidden; float:left;}
+.morales_contents .content01{width:100%; height:2700px; position:relative;}
+.morales_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.morales_contents .up_area img:nth-child(1){width:100px; position:absolute; bottom:-290px; left:100px; opacity:0;}
+.morales_contents .up_area img:nth-child(2){width:0; position:absolute; top:340px; left:450px; transform:rotate(-12deg);}
+.morales_contents .up_area .up_text{position:absolute; top:50px; right:20%; opacity: 0; width:600px;}
+.morales_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:80px; color:#fff; text-align: right; margin-right:-10px;}
+.morales_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.morales_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.morales_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#3d0607;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.9);
+}
+
+.morales_contents .down_area>img:nth-child(1){display:block; position:absolute; right:-200px; top:-250px; width:100px; opacity:0; transform:skewY(12deg) rotate(-22deg);}
+.morales_contents .down_area>img:nth-child(2){width:0px; position:absolute; top:600px; right:100px; transform:skewY(12deg) rotate(-12deg);}
+
+.morales_contents .down_area .down_text{width:1000px; position:absolute; top:200px; left:20%; transform:skewY(12deg); opacity:0;}
+.morales_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block;}
+.morales_contents .down_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px;}
+.morales_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+
+.content .down_pic{position:relative; z-index: 100; top:100px; left:-300px; width:1500px; height:1500px; transform:rotate(20deg); overflow: hidden; box-shadow: -10px -10px 20px rgba(0,0,0,0.4);}
+.content .down_pic img{opacity:1; width:1500px; position:absolute; top:-120px;}
+
+.morales_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.morales_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+
+
+/* parker */
+
+
+
+
+
+
+
+.parker_contents{width:100%; background: #062c9c; position:absolute; z-index:20; overflow:hidden;}
+.parker_contents .content01{width:100%; height:2700px; position:relative;}
+.parker_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.parker_contents .up_area img:nth-child(1){width:100px; position:absolute; bottom:-250px; left:200px; opacity:1;}
+.parker_contents .up_area img:nth-child(2){width:400px; position:absolute; top:70px; left:360px; transform:rotate(-12deg);}
+.parker_contents .up_area .up_text{width:600px; position:absolute; top:50px; right:20%;}
+.parker_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:80px; color:#fff; text-align: right; margin-right:-10px;}
+.parker_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.parker_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.parker_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#082066;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99
+}
+
+.parker_contents .down_area img:nth-child(1){display:block; position:absolute; right:0px; top:-60px; width:100px; opacity:0; transform:skewY(12deg);}
+.parker_contents .down_area img:nth-child(2){width:0px; position:absolute; top:200px; right:150px; transform:skewY(12deg) rotate(-12deg);}
+
+.parker_contents .down_area .down_text{width:1000px; position:absolute; top:250px; left:20%; transform:skewY(12deg);}
+.parker_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block; margin-bottom:10px;}
+.parker_contents .down_area p{color:#fff; margin-top:50px; font-size:14px; line-height: 30px;}
+.parker_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+.parker_contents .down_pic img{top:-200px; left:0px;}
+.parker_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.parker_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+
+/* gwen */
+
+
+
+.gwen_contents{width:100%; background: #fa9b9b; position:absolute; z-index:20; overflow:hidden;}
+.gwen_contents .content01{width:100%; height:2700px; position:relative;}
+.gwen_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.gwen_contents .up_area img:nth-child(1){width:100px; position:absolute; bottom:-290px; left:200px;}
+.gwen_contents .up_area img:nth-child(2){width:300px; position:absolute; top:150px; left:220px; transform:rotate(-12deg);}
+.gwen_contents .up_area .up_text{width:600px; position:absolute; top:50px; right:20%;}
+.gwen_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:50px; color:#fff; text-align: right; margin-right:-10px;}
+.gwen_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.gwen_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.gwen_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#f17272;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99
+}
+
+.gwen_contents .down_area img{display:block; position:absolute; right:-200px; top:50px; width:1400px; transform:skewY(12deg)}
+.gwen_contents .down_area img:nth-child(2){width:300px; position:absolute; top:400px; right:300px; transform:skewY(12deg) rotate(-12deg);}
+
+.gwen_contents .down_area .down_text{width:1000px; position:absolute; top:250px; left:20%; transform:skewY(12deg);}
+.gwen_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block; margin-bottom:10px;}
+.gwen_contents .down_area p{color:#fff; margin-top:50px; font-size:14px; line-height: 30px;}
+.gwen_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+.gwen_contents .down_pic img{left:0px;}
+.gwen_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.gwen_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+/* peni */
+
+
+
+.peni_contents{width:100%; background: #f76131; position:absolute; z-index:20; overflow:hidden;}
+.peni_contents .content01{width:100%; height:2700px; position:relative;}
+.peni_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.peni_contents .up_area img:nth-child(1){width:800px; position:absolute; bottom:-250px; left:200px;}
+.peni_contents .up_area img:nth-child(2){width:300px; position:absolute; top:500px; left:250px; transform:rotate(-12deg);}
+.peni_contents .up_area .up_text{width:600px; position:absolute; top:50px; right:20%;}
+.peni_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:50px; color:#fff; text-align: right; margin-right:-10px;}
+.peni_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.peni_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.peni_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#ee1852;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99
+}
+
+.peni_contents .down_area img{display:block; position:absolute; right:0px; top:100px; width:1500px; transform:skewY(12deg);}
+.peni_contents .down_area img:nth-child(2){width:300px; position:absolute; top:150px; right:200px; transform:skewY(12deg) rotate(-12deg);}
+
+.peni_contents .down_area .down_text{width:1000px; position:absolute; top:250px; left:400px; transform:skewY(12deg);}
+.peni_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block; margin-bottom:10px;}
+.peni_contents .down_area p{color:#fff; margin-top:50px; font-size:14px; line-height: 30px;}
+.peni_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+.peni_contents .down_pic img{top:0px; left:0px;}
+.peni_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.peni_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+
+/* ham */
+
+
+
+
+.ham_contents{width:100%; background: #ffb82e; position:absolute; z-index:20; overflow:hidden;}
+.ham_contents .content01{width:100%; height:2700px; position:relative;}
+.ham_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.ham_contents .up_area img:nth-child(1){width:500px; position:absolute; bottom:-200px; left:100px;}
+.ham_contents .up_area img:nth-child(2){width:400px; position:absolute; top:-50px; left:450px; transform:rotate(-12deg);}
+.ham_contents .up_area .up_text{width:600px; position:absolute; top:50px; right:20%;}
+.ham_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:50px; color:#fff; text-align: right; margin-right:-10px;}
+.ham_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.ham_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.ham_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#f79616;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99
+}
+
+.ham_contents .down_area img:nth-child(1){display:block; position:absolute; right:-100px; top:100px; width:900px; transform:skewY(12deg);}
+.ham_contents .down_area img:nth-child(2){width:300px; position:absolute; top:200px; right:200px; transform:skewY(12deg) rotate(-12deg);}
+
+.ham_contents .down_area .down_text{width:1000px; position:absolute; top:250px; left:20%; transform:skewY(12deg);}
+.ham_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block; margin-bottom:10px;}
+.ham_contents .down_area p{color:#fff; margin-top:50px; font-size:14px; line-height: 30px;}
+.ham_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+.ham_contents .down_pic img{left:0px; top:-150px;}
+.ham_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.ham_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+
+
+
+/* nuar */
+
+
+
+
+.nuar_contents{width:100%; background: #5c5c5c; position:absolute; z-index:20; overflow:hidden;}
+.nuar_contents .content01{width:100%; height:2700px; position:relative;}
+.nuar_contents .up_area{
+    width:100%;
+    height:500px;
+    float:left;
+    top:900px;
+    position:relative;
+}
+.nuar_contents .up_area img:nth-child(1){width:800px; position:absolute; bottom:-400px; left:0px;}
+.nuar_contents .up_area img:nth-child(2){width:300px; position:absolute; top:440px; left:300px; transform:rotate(-12deg);}
+.nuar_contents .up_area .up_text{width:600px; position:absolute; top:50px; right:20%;}
+.nuar_contents .up_area h3{font-family:'Luckiest Guy', sans-serif; letter-spacing: 10px; font-size:50px; color:#fff; margin-right:-10px; text-align: right;}
+.nuar_contents .up_area span{font-weight:300; color:#fff; font-size:30px; font-style:italic; display:block;  text-align: right;}
+.nuar_contents .up_area p{color:#fff; margin-top:30px; font-size:14px; line-height: 30px; text-align: right;}
+
+
+
+
+
+.nuar_contents .down_area{
+    width:100%;
+    height:800px;
+    background:#2a2a2a;
+    background-size:cover;
+    transform:skewY(-12deg);
+    float:left;
+    margin-top:1000px;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index: 99
+}
+
+.nuar_contents .down_area img:nth-child(1){display:block; position:absolute; right:0; top:100px; width:1300px; transform:skewY(12deg) rotate(30deg);}
+.nuar_contents .down_area img:nth-child(2){width:400px; position:absolute; top:120px; right:100px; transform:skewY(12deg) rotate(-12deg);}
+
+.nuar_contents .down_area .down_text{width:1000px; position:absolute; top:350px; left:20%; transform:skewY(12deg);}
+.nuar_contents .down_area span{font-weight:600; color:#fff; font-size:40px; font-style:italic; display:block; margin-bottom:10px;}
+.nuar_contents .down_area p{color:#fff; margin-top:50px; font-size:14px; line-height: 30px;}
+.nuar_contents .down_area p strong{font-weight:300; font-size:20px; margin-top:20px; margin-bottom:-10px; color:#fff; display:block;}
+.nuar_contents .down_pic img{left:0px; top:-200px;}
+.nuar_contents .con_footer{
+    width:100%;
+    height:600px;
+    position:absolute;
+    background:url(../img/contents/mo_footer.jpg) no-repeat 200px 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom:0;
+}
+.nuar_contents .con_footer .bg_filter{width:100%; height:100%; background: rgba(0,0,0,0.7);}
+
+
+
+
+#wrap .slide .content01 .up_area h3{font-size:80px;}
+
+
+
+
+
+/* end */
